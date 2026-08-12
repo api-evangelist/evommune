@@ -1,17 +1,33 @@
 aid: evommune
 name: Evommune
-description: 'Evommune is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Evommune, Inc. (Nasdaq: EVMN) is a clinical-stage biopharmaceutical company
+  headquartered in Palo Alto, California, discovering and developing therapies that target
+  the key drivers of chronic inflammatory disease. Founded in 2020 by the team behind
+  Dermira, the company applies a human tissue-based translational approach to immunology
+  and is advancing a clinical pipeline that includes EVO756, an oral small-molecule
+  MRGPRX2 antagonist in Phase 2b development for chronic spontaneous urticaria and
+  migraine prophylaxis, and an IL-18 binding protein fusion program licensed from
+  AprilBio. Evommune publishes no developer program, no public API and no machine-readable
+  API contract; its public web presence is a WordPress marketing site plus a hosted
+  investor-relations portal.'
+image: https://www.evommune.com/wp-content/uploads/2023/12/Evommune-blue-logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/evommune/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+x-tier: profile
+x-tier-reason: no-api-surface
 specificationVersion: '0.20'
 created: '2026-08-12'
 modified: '2026-08-12'
 tags:
 - Company
+- Biotechnology
+- Pharmaceuticals
+- Life Sciences
+- Immunology
+- Drug Development
+- Clinical Trials
+- Healthcare
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -20,4 +36,57 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
+  url: https://www.evommune.com/
+- type: About
+  url: https://www.evommune.com/about-us/
+- type: Contact
+  url: https://www.evommune.com/contact/
+- type: PrivacyPolicy
+  url: https://www.evommune.com/wp-content/uploads/2023/12/Evommune_privacy-statement_for_website.pdf
+- type: TermsOfService
+  url: https://www.evommune.com/wp-content/uploads/2023/12/Evommune_privacy-statement_for_website.pdf
+- type: InvestorRelations
+  url: https://ir.evommune.com/
+- type: PressReleases
+  url: https://ir.evommune.com/news-events/press-releases
+- type: Careers
+  url: https://www.evommune.com/job-openings/
+- type: LinkedIn
+  url: https://www.linkedin.com/company/evommune/
+- type: Pipeline
+  url: https://www.evommune.com/development-pipeline/
+- type: Publications
+  url: https://www.evommune.com/publications-posters/
+- type: DomainSecurity
+  url: security/evommune-domain-security.yml
+- type: LLMsTxt
+  url: llms/evommune-llms.txt
+- type: SecondaryMarket
   url: https://forgeglobal.com/evommune_stock/
+x-enrichment:
+  date: '2026-08-12'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: >-
+    Evommune is a clinical-stage biopharmaceutical company (Nasdaq: EVMN) whose entire
+    public surface is a WordPress marketing site and a hosted investor-relations portal —
+    there is no developer section, no GitHub organization, no package on any registry, and
+    every OpenAPI/GraphQL/MCP/agent-card path probed on both hosts returned 404; the only
+    HTTP 200 API-shaped response is the stock WordPress REST API at /wp-json/, which is
+    default CMS infrastructure rather than a product Evommune publishes.
+  evidence:
+  - url: https://www.evommune.com/openapi.json
+    status: 404
+  - url: https://www.evommune.com/.well-known/agent-card.json
+    status: 404
+  - url: https://ir.evommune.com/llms.txt
+    status: 404
+  - url: https://api.github.com/orgs/evommune
+    status: 404
+  - url: https://www.evommune.com/wp-json/
+    status: 200
+  checked: '2026-08-12'

@@ -1,0 +1,41 @@
+# Evommune
+
+> Evommune, Inc. (Nasdaq: EVMN) is a clinical-stage biopharmaceutical company in Palo Alto, California, developing therapies that target the key drivers of chronic inflammatory disease. Evommune publishes no public API, no developer portal and no machine-readable API contract; this file exists so an agent can reach the company's real public surface without inventing one.
+
+## API surface
+
+- [No public API](https://www.evommune.com/): Probed 2026-08-12. No OpenAPI, GraphQL, MCP server, AsyncAPI or A2A agent card is published on any Evommune host, and every /.well-known/ path returns 404. The marketing site runs WordPress and serves the stock WordPress REST API at /wp-json/, which is default CMS infrastructure rather than a product API.
+
+## Company
+
+- [Evommune](https://www.evommune.com/): Company home page.
+- [About Us](https://www.evommune.com/about-us/): Company background and mission.
+- [Approach](https://www.evommune.com/approach/): Human tissue-based translational immunology approach.
+- [Leadership](https://www.evommune.com/leadership/): Executive team and board of directors.
+- [Contact](https://www.evommune.com/contact/): Company contact page.
+- [Job Openings](https://www.evommune.com/job-openings/): Open roles.
+
+## Science and pipeline
+
+- [Development Pipeline](https://www.evommune.com/development-pipeline/): Clinical and preclinical programs.
+- [MRGPRX2 Antagonist (EVO756)](https://www.evommune.com/mrgprx2-antagonist/): Oral small-molecule MRGPRX2 antagonist program.
+- [IL-18BP Fusion Protein](https://www.evommune.com/il-18bp-fusion-protein/): IL-18 binding protein fusion program licensed from AprilBio.
+- [Disease Focus](https://www.evommune.com/disease-focus/): Chronic inflammatory disease areas.
+- [Clinical Trials](https://www.evommune.com/clinical-trials/): Trial information.
+- [Publications and Posters](https://www.evommune.com/publications-posters/): Scientific publications.
+
+## Investors
+
+- [Investor Relations](https://ir.evommune.com/): IR portal for Nasdaq: EVMN.
+- [Press Releases](https://ir.evommune.com/news-events/press-releases): Company news.
+- [SEC Filings](https://ir.evommune.com/financial-information/sec-filings): Regulatory filings.
+- [Financial Results](https://ir.evommune.com/financial-information/financial-results): Quarterly and annual results.
+- [Governance Documents](https://ir.evommune.com/governance/governance-documents): Corporate governance.
+
+## Legal
+
+- [Privacy Statement (PDF)](https://www.evommune.com/wp-content/uploads/2023/12/Evommune_privacy-statement_for_website.pdf): Website privacy statement and terms of use.
+
+## Profile
+
+- [API Evangelist profile](https://apis.io/provider/evommune/): Independent third-party profile of Evommune's public API surface.

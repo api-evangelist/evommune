@@ -1,0 +1,44 @@
+generated: '2026-08-12'
+method: probed
+source: live HTTPS probes of every Evommune host named in apis.yml
+note: >-
+  Recorded absence. Every /.well-known/ path was probed on both Evommune hosts on
+  2026-08-12 and every one returned HTTP 404 — no security.txt, no OIDC/OAuth discovery,
+  no api-catalog, no ai-plugin and no A2A agent card. No WellKnown or SecurityTxt
+  pointer is emitted in apis.yml, because nothing was served. Separately, the marketing
+  site is WordPress and answers HTTP 200 at https://www.evommune.com/wp-json/ with the
+  stock WordPress REST API discovery document (namespaces wp/v2, oembed/1.0, yoast/v1,
+  divi/v1, wordfence/v1). That is default CMS infrastructure shipped by WordPress, not
+  an API Evommune publishes, documents or supports, so it is recorded here as an
+  observation and is NOT registered as an API entry.
+hosts:
+- host: www.evommune.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+- host: ir.evommune.com
+  documents:
+  - {path: /.well-known/security.txt, status: 404}
+  - {path: /.well-known/openid-configuration, status: 404}
+  - {path: /.well-known/oauth-authorization-server, status: 404}
+  - {path: /.well-known/oauth-protected-resource, status: 404}
+  - {path: /.well-known/api-catalog, status: 404}
+  - {path: /.well-known/ai-plugin.json, status: 404}
+  - {path: /.well-known/agent-card.json, status: 404}
+  - {path: /.well-known/agent.json, status: 404}
+other_probes:
+- {url: 'https://www.evommune.com/openapi.json', status: 404}
+- {url: 'https://www.evommune.com/swagger.json', status: 404}
+- {url: 'https://www.evommune.com/api-docs', status: 404}
+- {url: 'https://www.evommune.com/graphql', status: 404}
+- {url: 'https://www.evommune.com/llms.txt', status: 404}
+- {url: 'https://www.evommune.com/wp-json/', status: 200}
+- {url: 'https://ir.evommune.com/openapi.json', status: 404}
+- {url: 'https://ir.evommune.com/llms.txt', status: 404}
+- {url: 'https://api.evommune.com/openapi.json', status: 0, note: host does not resolve}
