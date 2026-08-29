@@ -10,6 +10,17 @@ description: 'Evommune, Inc. (Nasdaq: EVMN) is a clinical-stage biopharmaceutica
   AprilBio. Evommune publishes no developer program, no public API and no machine-readable
   API contract; its public web presence is a WordPress marketing site plus a hosted
   investor-relations portal.'
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 image: https://www.evommune.com/wp-content/uploads/2023/12/Evommune-blue-logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/evommune/refs/heads/main/apis.yml
 x-type: company
