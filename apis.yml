@@ -23,6 +23,9 @@ deliveryModel:
   method: derived
 image: https://www.evommune.com/wp-content/uploads/2023/12/Evommune-blue-logo.svg
 url: https://raw.githubusercontent.com/api-evangelist/evommune/refs/heads/main/apis.yml
+x-api-posture: no-product-api
+x-api-posture-basis: observed
+x-api-posture-note: "Evommune publishes no developer program, no public API and no machine-readable API contract; its public web presence is a WordPress marketing site plus a hosted investor-relations portal."
 x-type: company
 x-source: harvest:secondary-market
 x-tier: profile
